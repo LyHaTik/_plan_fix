@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+	<link rel="stylesheet" href="{% static 'style.css' %}"></link>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>>Тренировка</title>
+</head>
+<body>
+	<ul><img src="">
+		<button id="create_tr" class="btn">Start</button></ul>
+		<div class="inner">
+			<ul><label for="date_tr">🗓:</label>
+				<input type="date" name="date_tr" id="id_date_tr"></ul>
+			<ul><label for="time_tr">🕢:</label>
+				<input type="time" name="time_tr" id="id_time_tr" value="18:00"></ul>
+			<ul><label for="hidden_survey">Скрытая:</label>
+				<input type="checkbox" name="hidden_survey" id="id_hidden_survey"></ul>
+			<ul><label for="type_tr">Тип тренировки:</label>
+				<select type="text" id="id_type_tr" name="type_tr">
+                    			<option value="Игра">Игра</option>
+                    			<option value="Тренировка">Тренировка</option>
+                		</select>
+			</ul>
+			<ul><label for="level">Уровень 🦾:</label>
+				<select type="text" id="id_level" name="level" value="Начинающий">
+                    			<option value="Начинающий">Начинающий</option>
+                    			<option value="Ниже среднего">Ниже среднего</option>
+					<option value="Средний">Средний</option>
+                    			<option value="Средний продвинутый">Средний продвинутый</option>
+					<option value="Профи">Профи</option>
+                		</select>
+			</ul>
+			<ul><label for="count_gamer">Игроков 👥:</label>
+				<input type="number" name="count_gamer" id="id_count_gamer" value=12></ul>
+			<ul><label for="location">⛳️:</label>
+				<select type="text" id="id_location" name="location" value="PSU">
+					<option value="PSU">PSU</option>
+                    			<option value="NaiHanBeach">Nai Han Beach</option>
+					<option value="Sapanhin">Sapanhin</option>
+				</select>
+			</ul>
+			<ul><label for="comment" width="400px">💬:</label>
+				<input type="text" name="comment" id="id_comment" value="Бою быть!">
+			</ul>
+		</div>
+	<script src="{% static 'telegram-web-app.js' %}"></script>
+</body>
+</html>
