@@ -51,7 +51,7 @@ c.onclick = function() {
  }
 }
 
-var v = document.querySelector('#id_delivery');
+var v = document.querySelector('#id_undelivery');
 v.onclick = function() {
  if (v.checked) {
   alert( 'Введите адрес' );
