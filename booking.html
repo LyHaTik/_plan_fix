@@ -9,7 +9,8 @@
 <body>
 	<h3>Бронирование</h3>
 	<img src="">
-		<p class="inner">
+		<div class="inner">
+			<p>
 				<ol><label for="arendator">Арендатор:</label>
 					<input type="text" name="arendator" id="id_arendator" value="Ф.И.">
 				</ol>
@@ -29,8 +30,10 @@
 					<label for="period">Период:</label>
 						<input type="number" name="period" id="id_period" value=12 style="width: 20px;">
 				</ol>
-		</p>
-		<p class="inner">
+			</p>
+		</div>
+		<div class="inner">
+			<p>
 				<ol><label for="prepay">Предоплата 💵:</label>
 					<select type="text" id="id_prepay" name="prepay">
 						<option value="FULL">FULL</option>
@@ -52,8 +55,10 @@
 				<ol><label for="count" width="400px">Стоимость услуг:</label>
 					<input type="number" name="count" id="id_count" style="width: 120px;">
 				</ol>
-		</p>
-		<p class="inner">
+			</p>
+		</div>
+		<div class="inner">
+			<p>
 			<ul><label for="hz">Рефер.:</label>
 				<input type="text" name="hz" id="id_hz" value="Рефер." style="width: 50px;">
 				<label for="helmets">Helmets 🪖:</label>
@@ -73,6 +78,7 @@
 				<input type="text" name="comment" id="id_comment" style="width: 80%;">
 			</ul>
 		</p>
+		</div>
 		<ul>
 			<button id="create_tr" class="btn">Start</button></ul>
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
