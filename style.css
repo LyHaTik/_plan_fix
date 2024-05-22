@@ -14,10 +14,8 @@ body {
 
 .inner {
   display: grid;
-  padding: 10px;
-  margin: 20px;
   grid-template-columns: 1fr;
-  border: 1px solid #B25538;
+  border: 1px solid var(--tg-theme-text-color);
   border-radius: 10px;
   grid-template-rows: 50px 50px 50px 50px 50px 50px;
   }
