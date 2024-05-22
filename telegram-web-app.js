@@ -1,5 +1,5 @@
 let tg = window.Telegram.WebApp;
-let booking = document.getElementById("id_booking");
+let booking = document.getElementById("booking");
 
 booking.addEventListener("click", () => {
 	let arendator = document.getElementById("id_arendator").value;
