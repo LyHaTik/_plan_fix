@@ -14,8 +14,8 @@ body {
 
 .inner {
   display: grid;
-  padding: 10px;
-  margin: 20px;
+  padding: 1px;
+  margin: 200px;
   grid-template-columns: 1fr;
   border: None;
   border-radius: 10px;
