@@ -1,5 +1,5 @@
 let tg = window.Telegram.WebApp;
-let create_tr = document.getElementById("create_tr");
+let booking = document.getElementById("booking");
 
 create_tr.addEventListener("click", () => {
 	let arendator = document.getElementById("id_arendator").value;
@@ -42,11 +42,20 @@ create_tr.addEventListener("click", () => {
 		tg.close()
 	});
 
-var c = document.querySelector('#id_hidden_survey');
+var c = document.querySelector('#id_delivery');
 c.onclick = function() {
  if (c.checked) {
-  alert( '🥷 Скрытая тренировка: опрос тренировки в личку' );
+  alert( 'Введите адрес' );
  } else {
-  alert( 'Открытая тренировка: опрос тренировки в личку и группу' );
+  alert( 'Доставка отменена' );
+ }
+}
+
+var v = document.querySelector('#id_delivery');
+v.onclick = function() {
+ if (v.checked) {
+  alert( 'Введите адрес' );
+ } else {
+  alert( 'Забор ТС отменен' );
  }
 }
