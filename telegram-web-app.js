@@ -1,7 +1,7 @@
 let tg = window.Telegram.WebApp;
 let booking = document.getElementById("booking");
 
-create_tr.addEventListener("click", () => {
+booking.addEventListener("click", () => {
 	let arendator = document.getElementById("id_arendator").value;
 	let date_start = document.getElementById("id_date_start").value;
 	let date_finish = document.getElementById("id_date_finish").value;
