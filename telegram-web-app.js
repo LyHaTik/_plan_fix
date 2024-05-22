@@ -2,7 +2,8 @@ let tg = window.Telegram.WebApp;
 let create_tr = document.getElementById("create_tr");
 
 create_tr.addEventListener("click", () => {
-	let date_tr = document.getElementById("id_date_tr").value;
+	let date_start = document.getElementById("id_date_start").value;
+	let date_finish = document.getElementById("id_date_finish").value;
 	let time_tr = document.getElementById("id_time_tr").value;
 	let location = document.getElementById("id_location").value;
 	let hidden_survey = document.getElementById("id_hidden_survey").checked;
@@ -11,7 +12,8 @@ create_tr.addEventListener("click", () => {
 	let comment = document.getElementById("id_comment").value;
 	let level = document.getElementById("id_level").value;
 	let data = {
-		date_tr: date_tr,
+		date_start: date_start,
+		date_finish: date_finish,
 		time_tr: time_tr,
 		location: location,
 		hidden_survey: hidden_survey,
