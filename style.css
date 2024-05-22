@@ -1,0 +1,68 @@
+
+
+body {
+  background-image: url('giphy (1).gif');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 10px;
+  height:100%;
+  width:100%;
+  font-size: 18px;
+  color: var(--tg-theme-text-color);
+  }
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: None;
+  border-radius: 10px;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px;
+  }
+
+.img {
+  width: 150px;
+  }
+
+.item {
+  text-align: right;
+  }
+
+.btn {
+  display: inline-blok;
+  padding: 10px 40px;
+  border: None;
+  background: var(--tg-theme-button-color);
+  border-radius: 10px;
+  color: var(--tg-theme-button-text-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  }
+
+id_hidden_survey
+[for="id_hidden_survey"] {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  border-radius: 50px;
+  background: rgb(71, 71, 71) linear-gradient(rgb(17, 17, 17), rgb(17, 17, 17), rgba(255, 255, 255,.2)) no-repeat 50% 50%;
+  background-size: 80px 2px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.2);
+  cursor: pointer;
+}
+[for="id_hidden_survey"]:before {
+  content: "";
+  position: absolute;
+  left: 10px; top: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #ccc linear-gradient(#fcfff4, #dfe5d7 40%, #b3bead);
+  transition: .5s;
+}
+id_hidden_survey:checked ~ [for="id_hidden_survey"]:before {
+left: 90px;
+}
