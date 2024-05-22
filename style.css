@@ -18,7 +18,7 @@ body {
   margin: 10px;
   padding: 10px;
   grid-template-columns: 1fr;
-  border: 2px solid var(--tg-theme-button-text-color);
+  border: 2px solid var(--tg-theme-button-color);
   border-radius: 10px;
   grid-template-rows: 50px 50px 50px 50px 50px 50px;
   }
