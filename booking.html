@@ -18,8 +18,6 @@
 				<label for="date_start">🗓 начало:</label>
 					<input type="date" name="date_start" id="id_date_start">
 			</ul>
-			<ul><label for="hidden_survey">Скрытая:</label>
-				<input type="checkbox" name="hidden_survey" id="id_hidden_survey"></ul>
 			<ul><label for="adres">Адрес:</label>
 				<input type="text" name="adres" id="id_adres">
 			</ul>
@@ -63,10 +61,14 @@
 			<ul><label for="helmets">Helmets:</label>
 				<input type="number" name="helmets" id="id_helmets">
 			</ul>
-			<ul><label for="location_start">⛳️:</label>
+			<ul><label for="delivery">Доставить:</label>
+				<input type="checkbox" name="delivery" id="id_delivery">
+				<label for="location_start">⛳️:</label>
 				<input type="text" id="id_location_start" name="location_start" value="Адрес начала бронирования">
 			</ul>
-			<ul><label for="location_finish">⛳️:</label>
+			<ul><label for="undelivery">Забарать:</label>
+				<input type="checkbox" name="undelivery" id="id_undelivery">
+				<label for="location_finish">⛳️:</label>
 				<input type="text" id="id_location_finish" name="location_finish" value="Адрес завершения бронирования">
 			</ul>
 		</div>
