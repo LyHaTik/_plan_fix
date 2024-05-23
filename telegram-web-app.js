@@ -3,8 +3,12 @@ let booking = document.getElementById("booking");
 
 booking.addEventListener("click", () => {
 	let arendator = document.getElementById("id_arendator").value;
+	let date_start = document.getElementById("id_date_start").value;
+	let date_finish = document.getElementById("id_date_finish").value;
 	let data = {
-		arendator: arendator
+		arendator: arendator,
+		date_start: date_start,
+		date_finish: date_finish
 		}
 		tg.sendData(JSON.stringify(data));
 		tg.close()
