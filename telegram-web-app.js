@@ -8,12 +8,6 @@ booking.addEventListener("click", () => {
 	let adres = document.getElementById("id_adres").value;
 	let ts = document.getElementById("id_ts").value;
 	let period = document.getElementById("id_period").value;
-	let prepay = document.getElementById("id_prepay").value;
-	let currency = document.getElementById("id_currency").value;
-	let tarif = document.getElementById("id_tarif").value;
-	let deposite = document.getElementById("id_deposite").value;
-	let count = document.getElementById("id_count").value;
-	let hz = document.getElementById("id_hz").value;
 	let data = {
 		arendator: arendator,
 		date_start: date_start,
