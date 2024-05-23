@@ -16,6 +16,11 @@ booking.addEventListener("click", () => {
 		deposite: deposite,
 		count: count,
 		hz: hz,
+		delivery: delivery,
+		location_start: location_start,
+		undelivery: undelivery,
+		location_finish: location_finish,
+		comment: comment
 		}
 		tg.sendData(JSON.stringify(data));
 		tg.close()
