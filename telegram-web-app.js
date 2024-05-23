@@ -13,6 +13,12 @@ booking.addEventListener("click", () => {
 	let tarif = document.getElementById("id_tarif").value;
 	let deposite = document.getElementById("id_deposite").value;
 	let count = document.getElementById("id_count").value;
+	let hz = document.getElementById("id_hz").value;
+	let delivery = document.getElementById("id_delivery").checked;
+	let location_start = document.getElementById("id_location_start").value;
+	let undelivery = document.getElementById("id_undelivery").checked;
+	let location_finish = document.getElementById("id_location_finish").value;
+	let comment = document.getElementById("id_comment").value;
 	let data = {
 		arendator: arendator,
 		date_start: date_start,
@@ -24,7 +30,13 @@ booking.addEventListener("click", () => {
 		currency: currency,
 		tarif: tarif,
 		deposite: deposite,
-		count: count
+		count: count,
+		hz: hz,
+		delivery: delivery,
+		location_start: location_start,
+		undelivery: undelivery,
+		location_finish: location_finish,
+		comment: comment
 		}
 		tg.sendData(JSON.stringify(data));
 		tg.close()
