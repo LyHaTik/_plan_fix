@@ -5,6 +5,17 @@ booking.addEventListener("click", () => {
 	let arendator = document.getElementById("id_arendator").value;
 	let data = {
 		arendator: arendator,
+		date_start: date_start,
+		date_finish: date_finish,
+		adres: adres,
+		ts: ts,
+		period: period,
+		prepay: prepay,
+		currency: currency,
+		tarif: tarif,
+		deposite: deposite,
+		count: count,
+		hz: hz,
 		}
 		tg.sendData(JSON.stringify(data));
 		tg.close()
