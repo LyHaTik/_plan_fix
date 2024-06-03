@@ -96,7 +96,7 @@ function autoPeriod() {
 // Получаем элементы ввода дат и поле продолжительности
 const startDateInput = document.getElementById('id_date_start');
 const endDateInput = document.getElementById('id_date_finish');
-document.getElementById('id_period') = calculatePeriod();
+window.onload = calculatePeriod();
 
 // Функция для вычисления разницы между датами
 function calculatePeriod() {
@@ -113,7 +113,7 @@ function calculatePeriod() {
 		const dayDiff = timeDiff / (1000 * 60 * 60 * 24);
 
 		// Устанавливаем значение продолжительности
-		periodInput.value = dayDiff;
+		document.getElementById('id_period') = dayDiff;
 	}
 }
 
