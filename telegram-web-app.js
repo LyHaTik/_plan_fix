@@ -23,7 +23,6 @@ booking.addEventListener("click", () => {
 		arendator: arendator,
 		date_start: date_start,
 		date_finish: date_finish,
-		address: address,
 		ts: ts,
 		period: period,
 		prepay: prepay,
@@ -32,41 +31,13 @@ booking.addEventListener("click", () => {
 		deposite: deposite,
 		count: count,
 		hz: hz,
-		delivery: delivery,
 		location_start: location_start,
-		undelivery: undelivery,
 		location_finish: location_finish,
 		comment: comment
 		}
 		tg.sendData(JSON.stringify(data));
 		tg.close()
 	});
-
-
-
-let delivery = document.querySelector('#id_delivery');
-delivery.onclick = function() {
-	if (delivery.checked) {
-  		alert( 'Введите адрес' );
- 		} 
-	else {
-  		alert( 'Доставка отменена' );
- 		}
-	}
-
-
-
-let v = document.querySelector('#id_undelivery');
-v.onclick = function() {
- 	if (v.checked) {
-  		alert( 'Введите адрес забора' );
- 		}
-	else {
-  		alert( 'Забор ТС отменен' );
- 		}
-	}
-
-
 
 function updateCoordinates(lat, lng) {
   document.getElementById('lat').value = lat;
@@ -125,7 +96,7 @@ function autoPeriod() {
 // Получаем элементы ввода дат и поле продолжительности
 const startDateInput = document.getElementById('id_date_start');
 const endDateInput = document.getElementById('id_date_finish');
-const periodInput = document.getElementById('id_period');
+document.getElementById('id_period') = calculatePeriod();
 
 // Функция для вычисления разницы между датами
 function calculatePeriod() {
