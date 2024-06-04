@@ -43,7 +43,7 @@ booking.addEventListener("click", () => {
 
 		comment: comment
 		}
-		tg.sendData(JSON.stringify(data));
-		tg.close()
+	tg.sendData(JSON.stringify(data));
+	tg.close()
 	});
 
