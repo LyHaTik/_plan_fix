@@ -6,8 +6,8 @@ let bt_close = document.getElementById("id_bt_close");
 
 bt_location_start.addEventListener("click", () => {
 	/* document.querySelector('.popup').style.display = 'block' */
-	tg.showPopup(title='123123', message='текст сообшения')
-	showPopup(title='345465', message='текст сообшения 43434')
+	tg.showPopup('текст сообшения')
+	showPopup('текст сообшения 43434')
 	document.querySelector('.popup').style.display = 'block'
 });
 
