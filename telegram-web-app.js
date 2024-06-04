@@ -5,11 +5,11 @@ let bt_location_finish = document.getElementById("id_bt_location_finish");
 let bt_close = document.getElementById("id_bt_close");
 
 bt_location_start.addEventListener("click", () => {
-	tg.onPopupOpened()
+	tg.onPopupOpened('.popup')
 });
 
 bt_close.addEventListener("click", () => {
-	tg.onPopupClosed()
+	tg.onPopupClosed('.popup')
 });
 
 booking.addEventListener("click", () => {
