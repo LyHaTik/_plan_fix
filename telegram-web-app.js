@@ -5,7 +5,6 @@ booking.addEventListener("click", () => {
 	let arendator = document.getElementById("id_arendator").value;
 	let date_start = document.getElementById("id_date_start").value;
 	let date_finish = document.getElementById("id_date_finish").value
-	let address = document.getElementById("id_address").value;
 	let ts = document.getElementById("id_ts").value;
 	let period = document.getElementById("id_period").value;
 	let prepay = document.getElementById("id_prepay").value;
@@ -13,7 +12,7 @@ booking.addEventListener("click", () => {
 	let tarif = document.getElementById("id_tarif").value;
 	let deposite = document.getElementById("id_deposite").value;
 	let count = document.getElementById("id_count").value;
-	let hz = document.getElementById("id_hz").value;
+	let refer = document.getElementById("id_refer").value;
 	let helmets = document.getElementById("id_helmets").value;
 	let location_start = document.getElementById("id_bt_location_start").value;
 	let location_finish = document.getElementById("id_bt_location_finish").value;
@@ -29,7 +28,7 @@ booking.addEventListener("click", () => {
 		tarif: tarif,
 		deposite: deposite,
 		count: count,
-		hz: hz,
+		refer: refer,
 		helmets: helmets,
 		location_start: location_start,
 		location_finish: location_finish,
