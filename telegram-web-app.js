@@ -4,6 +4,35 @@ let bt_location_start = document.getElementById("id_bt_location_start");
 let bt_location_finish = document.getElementById("id_bt_location_finish");
 let bt_close = document.getElementById("id_bt_close");
 
+let startDateInput = document.getElementById('id_date_start');
+let endDateInput = document.getElementById('id_date_finish');
+let period = document.getElementById('id_period');
+startDateInput.addEventListener('change', calculatePeriod);
+endDateInput.addEventListener('change', calculatePeriod);
+
+function calculatePeriod() {
+	// Получаем значения дат
+	let startDate = new Date(startDateInput.value);
+	let endDate = new Date(endDateInput.value);
+
+	// Проверяем, что обе даты установлены
+	if (startDate && endDate) {
+		// Вычисляем разницу в миллисекундах
+		let timeDiff = endDate - startDate;
+
+		// Вычисляем разницу в днях
+		let dayDiff = timeDiff / (1000 * 60 * 60 * 24);
+
+		// Устанавливаем значение продолжительности
+		period.value = dayDiff;
+	}
+}
+
+
+
+
+
+	
 bt_location_start.addEventListener("click", () => {
 	document.querySelector('.popup').style.display = 'block'
 	/* document.querySelector('.popup').style.display = 'block' */
@@ -57,7 +86,7 @@ function initMap() {
 booking.addEventListener("click", () => {
 	let arendator = document.getElementById("id_arendator").value;
 	let date_start = document.getElementById("id_date_start").value;
-	let date_finish = document.getElementById("id_date_finish").value
+	let date_finish = document.getElementById("id_date_finish").value;
 	let ts = document.getElementById("id_ts").value;
 	let period = document.getElementById("id_period").value;
 	let prepay = document.getElementById("id_prepay").value;
