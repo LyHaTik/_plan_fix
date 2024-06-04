@@ -14,6 +14,7 @@ booking.addEventListener("click", () => {
 	let deposite = document.getElementById("id_deposite").value;
 	let count = document.getElementById("id_count").value;
 	let hz = document.getElementById("id_hz").value;
+	let helmets = document.getElementById("id_helmets").value;
 	let location_start = document.getElementById("id_bt_location_start").value;
 	let location_finish = document.getElementById("id_bt_location_finish").value;
 	let comment = document.getElementById("id_comment").value;
@@ -29,6 +30,7 @@ booking.addEventListener("click", () => {
 		deposite: deposite,
 		count: count,
 		hz: hz,
+		helmets: helmets,
 		location_start: location_start,
 		location_finish: location_finish,
 		comment: comment
