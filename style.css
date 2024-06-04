@@ -95,7 +95,7 @@ body {
 }
 
 .bt_location:hover  {
-  background: red;
+  background: rgb(255, 135, 50);
 }
 
 .bt_location:active {
