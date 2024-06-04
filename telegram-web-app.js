@@ -1,5 +1,7 @@
 let tg = window.Telegram.WebApp;
 let booking = document.getElementById("booking");
+let bt_location_start = document.getElementById("id_bt_location_start");
+let bt_location_finish = document.getElementById("id_bt_location_finish");
 
 booking.addEventListener("click", () => {
 	let arendator = document.getElementById("id_arendator").value;
@@ -14,8 +16,7 @@ booking.addEventListener("click", () => {
 	let count = document.getElementById("id_count").value;
 	let refer = document.getElementById("id_refer").value;
 	let helmets = document.getElementById("id_helmets").value;
-	let location_start = document.getElementById("id_bt_location_start").value;
-	let location_finish = document.getElementById("id_bt_location_finish").value;
+
 	let comment = document.getElementById("id_comment").value;
 	let data = {
 		arendator: arendator,
@@ -30,10 +31,14 @@ booking.addEventListener("click", () => {
 		count: count,
 		refer: refer,
 		helmets: helmets,
-		location_start: location_start,
-		location_finish: location_finish,
+
 		comment: comment
 		}
 		tg.sendData(JSON.stringify(data));
 		tg.close()
 	});
+
+function closePopup() {
+	var popup = document.querySelector('.popup');
+	popup.style.display = 'none';
+	}
