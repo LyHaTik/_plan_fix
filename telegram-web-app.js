@@ -47,7 +47,3 @@ booking.addEventListener("click", () => {
 		tg.close()
 	});
 
-function closePopup() {
-	var popup = document.querySelector('.popup');
-	popup.style.display = 'none';
-	}
