@@ -13,7 +13,14 @@
 <body>
 	<h3>Бронирование</h3>
 	<script src="js/telegram-web-app.js"></script>
-	<form>
+		<div class="popup">
+			<div id="map"></div>
+				<button id="bt_close" onclick="closePopup()">❌</button>
+			<ul>
+				<input type="text" id="lat" class="cord_popup"></input>
+				<input type="text" id="lng" class="cord_popup"></input>
+			</ul>
+		</div>
 		<div class="inner">
 			<ul><label for="id_arendator">Арендатор:</label>
 				<select type="text" id="id_arendator" name="arendator">
@@ -68,21 +75,13 @@
 					<input type="number" name="helmets" id="id_helmets" style="width: 50px;"></ul>
 
 			<ul><label for="bt_location_start">Доставить:</label>
-					<button class="bt_location" name="bt_location_start" onclick="openPopup()">📌</button>
+					<button class="bt_location" name="bt_location_start" onclick="tg.showPopup()">📌</button>
 
 				<label for="bt_location_finish">Забарать:</label>
 					<button class="bt_location" name="bt_location_finish" onclick="openPopup()">📌</button></ul>
 
 			<ul><label for="id_comment">Комментрий 💬:</label>
 				<input type="text" name="comment" id="id_comment"></ul>
-		</div>
-		<div class="popup">
-			<div id="map"></div>
-				<button id="bt_close" onclick="closePopup()">❌</button>
-			<ul>
-				<input type="text" id="lat" class="cord_popup"></input>
-				<input type="text" id="lng" class="cord_popup"></input>
-			</ul>
 		</div>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbz9SsxmvvV-mXRkRGTH8F4cENndiecOk&libraries=places&callback=initMap"></script>
 	<ul><button id="booking" class="btn">Start</button></ul>
