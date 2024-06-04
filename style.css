@@ -90,8 +90,20 @@ body {
   text-align: center;
 }
 
-.bt_location: focus {
-  background-color: yellow;
+.bt_location:focus {
+  background: yellow;
+}
+
+.bt_location:hover  {
+  background: red;
+}
+
+.bt_location:active {
+  background: green;
+}
+
+.bt_location: visited {
+  background: black;
 }
 
 .cord_popup {
