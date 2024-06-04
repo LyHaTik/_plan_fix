@@ -11,7 +11,11 @@ body {
     font-size: 14px;
     color: var(--tg-theme-text-color);
   }
-  
+
+body:before {
+      background-color: rgba(0,0,0,.5);
+    }
+
 .inner {
     display: grid;
     margin: 10px;
