@@ -82,7 +82,7 @@ function closePopup() {
 	popup.style.display = 'none';
 	}
 
-function openPopup() {
+function tg.showPopup() {
 	var popup = document.querySelector('.popup');
 	popup.style.display = 'block';
 	}
