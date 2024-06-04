@@ -77,7 +77,7 @@ function initMap() {
 	map.panTo(myLatlng);
   }
 
-function closePopup() {
+function tg.popupClosed() {
 	var popup = document.querySelector('.popup');
 	popup.style.display = 'none';
 	}
