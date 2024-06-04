@@ -84,7 +84,7 @@ function closePopup() {
 
 function openPopup() {
 	var popup = document.querySelector('.popup');
-	popup.style.display = 'display';
+	popup.style.display = 'block';
 	}
 
 function autoPeriod() {
