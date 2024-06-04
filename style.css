@@ -49,7 +49,7 @@ body {
   }
 
 .popup {
-    display: block;
+    display: none;
     position: absolute;
     top: 25%;
     left: 50%;
