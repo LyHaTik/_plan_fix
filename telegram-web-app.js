@@ -14,10 +14,8 @@ booking.addEventListener("click", () => {
 	let deposite = document.getElementById("id_deposite").value;
 	let count = document.getElementById("id_count").value;
 	let hz = document.getElementById("id_hz").value;
-	let delivery = document.getElementById("id_delivery").checked;
-	let location_start = document.getElementById("id_location_start").value;
-	let undelivery = document.getElementById("id_undelivery").checked;
-	let location_finish = document.getElementById("id_location_finish").value;
+	let location_start = document.getElementById("id_bt_location_start").value;
+	let location_finish = document.getElementById("id_bt_location_finish").value;
 	let comment = document.getElementById("id_comment").value;
 	let data = {
 		arendator: arendator,
