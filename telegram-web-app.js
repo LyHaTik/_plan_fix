@@ -59,7 +59,7 @@ function initMap() {
 	document.getElementById('lng').value = myLatlng.lng;
   
 	map = new google.maps.Map(document.getElementById('map'), {
-	  zoom: 12,
+	  zoom: 10,
 	  center: myLatlng
 	});
 	  
