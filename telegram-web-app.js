@@ -2,6 +2,11 @@ let tg = window.Telegram.WebApp;
 let booking = document.getElementById("booking");
 let bt_location_start = document.getElementById("id_bt_location_start");
 let bt_location_finish = document.getElementById("id_bt_location_finish");
+let bt_close = document.getElementById("id_bt_close");
+
+bt_close.addEventListener("click", () => {
+	tg.onPopupClosed()
+});
 
 booking.addEventListener("click", () => {
 	let arendator = document.getElementById("id_arendator").value;
